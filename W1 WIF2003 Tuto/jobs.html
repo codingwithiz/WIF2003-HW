@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaJam House Music</title>
+</head>
+
+<body>
+    <Header>
+        <h1>JavaJam Coffee House</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="music.html">Music</a>
+            <a href="jobs.html">Jobs</a>
+        </nav>
+    </Header>
+    <main>
+        <h2>Jobs at JavaJam</h2>
+        <p>
+            Want to work at JavaJam? Fill out the form below to start your application. Required
+            fields are marked with an asterisk (*).
+        </p>
+        <form method="post" action="http://webdevbasics.net/scripts/javajam8.php">
+            <label for="name">*Name</label>
+            <br>
+            <input type="text" id="name" required>
+            <br>
+            <label for="email">*Email</label>
+            <br>
+            <input type="email" id="email" required>
+            <br>
+            <label for="experience">*Experience</label>
+            <br>
+            <textarea id="experience" rows="4" cols="50" required></textarea><br><br>
+            <label for="position">Select job position:</label><br>
+            <select id="position" name="position" required>
+                <option value="">Select Position</option>
+                <option value="Software Developer">Software Developer</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Project Manager">Project Manager</option>
+                <option value="UI/UX Designer">UI/UX Designer</option>
+            </select><br><br>
+
+            <label for="interview_datetime">Preferred Interview Date and Time:</label><br>
+            <input type="datetime-local" id="interview_datetime" name="interview_datetime" required><br><br>
+
+            <label for="photo">Upload your photo:</label><br>
+            <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+            <input type="submit" value="Apply Now" name="submit">
+            
+
+    </main>
+    <footer>
+        <small>
+            <p><i>Copyright &copy; 2024 JavaJam Coffee House</i></p>
+            <p><i><a href="mailto:ingzhen2003@gmail.com">ingzhen2003@gmail.com</a></i></p>
+        </small>
+    </footer>
+</body>
+
+</html>
